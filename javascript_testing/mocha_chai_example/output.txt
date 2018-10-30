@@ -1,0 +1,1301 @@
+Script started on Tue 30 Oct 2018 12:11:17 AM UTC
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ npm init[K[Knp[K[Knpm install -g mocha[K[K[K[K[K[K[K[K[K[Knm[Kpm init [K
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+[1G[0Jname: (mocha_chai_example) [28G
+[1G[0Jversion: (1.0.0) [18G
+[1G[0Jdescription: [14G
+[1G[0Jentry point: (index.js) [25G
+[1G[0Jtest command: [15G
+[1G[0Jgit repository: [17G
+[1G[0Jkeywords: [11G
+[1G[0Jauthor: [9G
+[1G[0Jlicense: (ISC) [16G
+About to write to /home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/package.json:
+
+{
+  "name": "mocha_chai_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+[1G[0JIs this ok? (yes) [19Gyes
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ ls
+output.txt  package.json
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ npm install --save mocha
+[?25l[[90m..................[0m] / normalizeTree: [7msill[0m [35minstall[0m loadCurrentTree[K[[90m..................[0m] \ normalizeTree: [7msill[0m [35minstall[0m loadCurrentTree[K[[90m..................[0m] / normalizeTree: [7msill[0m [35minstall[0m loadCurrentTree[K[[7m    [27m[90m..............[0m] - loadRequestedDeps: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[K[[7m    [27m[90m..............[0m] / loadRequestedDeps: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[K[[7m    [27m[90m..............[0m] / loadRequestedDeps: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[K[[7m    [27m[90m..............[0m] / fetchMetadata: [7msill[0m [35mmapToRegistry[0m uri https://registry.npmjs.org/mkdirp[K[[7m    [27m[90m..............[0m] \ fetchMetadata: [7msill[0m [35mmapToRegistry[0m uri https://registry.npmjs.org/mkdirp[K[[7m    [27m[90m..............[0m] \ fetchMetadata: [7msill[0m [35mmapToRegistry[0m uri https://registry.npmjs.org/mkdirp[K[[7m    [27m[90m..............[0m] | fetchMetadata: [7msill[0m [35mmapToRegistry[0m uri https://registry.npmjs.org/mkdirp[K[[7m    [27m[90m..............[0m] | fetchMetadata: [7msill[0m [35mmapToRegistry[0m uri https://registry.npmjs.org/mkdirp[K[[7m     [27m[90m.............[0m] / fetchMetadata: [7msill[0m [35mmapToRegistry[0m uri https://registry.npmjs.org/once[K[[7m     [27m[90m.............[0m] \ fetchMetadata: [7msill[0m [35mmapToRegistry[0m uri https://registry.npmjs.org/once[K[[7m     [27m[90m.............[0m] / fetchMetadata: [34;40mverb[0m [35mafterAdd[0m /home/ec2-user/.npm/wrappy/1.0.2/package/package.json wri[K[[7m      [27m[90m............[0m] - fetchMetadata: [34;40mverb[0m [35mafterAdd[0m /home/ec2-user/.npm/concat-map/0.0.1/package/package.json[K[[7m       [27m[90m...........[0m] | fetchMetadata: [34;40mverb[0m [35mafterAdd[0m /home/ec2-user/.npm/minimist/0.0.8/package/package.json w[K[[7m             [27m[90m.....[0m] | fetch: [7msill[0m [35mdoParallel[0m fetch 24[K[[7m             [27m[90m.....[0m] | extract:mocha: [7msill[0m [35mdoParallel[0m extract 24[K[[7m             [27m[90m.....[0m] - extract:mocha: [7msill[0m [35mdoParallel[0m extract 24[K[[7m             [27m[90m.....[0m] | extract:mocha: [7msill[0m [35mdoParallel[0m extract 24[K[[7m             [27m[90m.....[0m] | extract:mocha: [7msill[0m [35mdoParallel[0m extract 24[K[[7m             [27m[90m.....[0m] | extract:inflight: [34;40mverb[0m [35mgentlyRm[0m don't care about contents; nuking /home/ec2-user/envir[K[[7m              [27m[90m....[0m] | extract:he: [7msill[0m [35mgunzTarPerm[0m modified mode [ 'lib/interfaces/tdd.js', 420, 436 ][K[[7m              [27m[90m....[0m] - extract:debug: [34;40mverb[0m [35mgentlyRm[0m don't care about contents; nuking /home/ec2-user/environm[K[[7m               [27m[90m...[0m] / preinstall:mocha: [7msill[0m [35mdoParallel[0m preinstall 24[K[[7m               [27m[90m...[0m] | build:supports-color: [34;40mverb[0m [35mlinkMans[0m supports-color@5.4.0[K[[7m                [27m[90m..[0m] - postinstall:debug: [7msill[0m [35mlifecycle[0m debug@3.1.0~postinstall: no script for postinstall,[K[K[?25hmocha_chai_example@1.0.0 /home/ec2-user/environment/cati/javascript_testing/mocha_chai_example
+└─┬ [40m[33mmocha@5.2.0[39m[49m 
+  ├── [40m[33mbrowser-stdout@1.3.1[39m[49m 
+  ├── [40m[33mcommander@2.15.1[39m[49m 
+  ├─┬ [40m[33mdebug@3.1.0[39m[49m 
+  │ └── [40m[33mms@2.0.0[39m[49m 
+  ├── [40m[33mdiff@3.5.0[39m[49m 
+  ├── [40m[33mescape-string-regexp@1.0.5[39m[49m 
+  ├─┬ [40m[33mglob@7.1.2[39m[49m 
+  │ ├── [40m[33mfs.realpath@1.0.0[39m[49m 
+  │ ├─┬ [40m[33minflight@1.0.6[39m[49m 
+  │ │ └── [40m[33mwrappy@1.0.2[39m[49m 
+  │ ├── [40m[33minherits@2.0.3[39m[49m 
+  │ ├── [40m[33monce@1.4.0[39m[49m 
+  │ └── [40m[33mpath-is-absolute@1.0.1[39m[49m 
+  ├── [40m[33mgrowl@1.10.5[39m[49m 
+  ├── [40m[33mhe@1.1.1[39m[49m 
+  ├─┬ [40m[33mminimatch@3.0.4[39m[49m 
+  │ └─┬ [40m[33mbrace-expansion@1.1.11[39m[49m 
+  │   ├── [40m[33mbalanced-match@1.0.0[39m[49m 
+  │   └── [40m[33mconcat-map@0.0.1[39m[49m 
+  ├─┬ [40m[33mmkdirp@0.5.1[39m[49m 
+  │ └── [40m[33mminimist@0.0.8[39m[49m 
+  └─┬ [40m[33msupports-color@5.4.0[39m[49m 
+    └── [40m[33mhas-flag@3.0.0[39m[49m 
+
+[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m mocha_chai_example@1.0.0 No description
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m mocha_chai_example@1.0.0 No repository field.
+[0m[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ npm install --save chai
+[?25l[[90m..................[0m] / normalizeTree: [7msill[0m [35minstall[0m loadCurrentTree[K[[90m..................[0m] / normalizeTree: [7msill[0m [35minstall[0m loadCurrentTree[K[[90m..................[0m] / normalizeTree: [7msill[0m [35minstall[0m loadCurrentTree[K[[90m..................[0m] - normalizeTree: [7msill[0m [35minstall[0m loadCurrentTree[K[[7m    [27m[90m..............[0m] \ loadRequestedDeps: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[K[[7m    [27m[90m..............[0m] - loadRequestedDeps: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[K[[7m    [27m[90m..............[0m] - fetchMetadata: [7msill[0m [35mmapToRegistry[0m uri https://registry.npmjs.org/pathval[K[[7m    [27m[90m..............[0m] / fetchMetadata: [7msill[0m [35mmapToRegistry[0m uri https://registry.npmjs.org/pathval[K[[7m    [27m[90m..............[0m] | fetchMetadata: [7msill[0m [35mmapToRegistry[0m uri https://registry.npmjs.org/pathval[K[[7m          [27m[90m........[0m] | diffTrees: [7msill[0m [35minstall[0m generateActionsToTake[K[[7m             [27m[90m.....[0m] / extract:chai: [7msill[0m [35mdoParallel[0m extract 7[K[[7m             [27m[90m.....[0m] - extract:chai: [7msill[0m [35mdoParallel[0m extract 7[K[[7m              [27m[90m....[0m] | extract:pathval: [34;40mverb[0m [35mgentlyRm[0m don't care about contents; nuking /home/ec2-user/enviro[K[[7m               [27m[90m...[0m] / preinstall:chai: [7msill[0m [35mdoParallel[0m preinstall 7[K[K[?25hmocha_chai_example@1.0.0 /home/ec2-user/environment/cati/javascript_testing/mocha_chai_example
+└─┬ [40m[33mchai@4.2.0[39m[49m 
+  ├── [40m[33massertion-error@1.1.0[39m[49m 
+  ├── [40m[33mcheck-error@1.0.2[39m[49m 
+  ├── [40m[33mdeep-eql@3.0.1[39m[49m 
+  ├── [40m[33mget-func-name@2.0.0[39m[49m 
+  ├── [40m[33mpathval@1.1.0[39m[49m 
+  └── [40m[33mtype-detect@4.0.8[39m[49m 
+
+[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m mocha_chai_example@1.0.0 No description
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m mocha_chai_example@1.0.0 No repository field.
+[0m[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ ls
+node_modules  output.txt  package.json
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ mkdir test
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ vim array[52P(reverse-i-search)`':[C[C[C[C[C[C[C[C[C[C[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ vim arrayi[KT[K[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ vim arrayTest.js[K[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ vim arrayTest.js[K[K[K[K[K[K[K[K[K[K[K[Ktest/a[KA[KarrayTest.js
+[?1049h[?1h=[1;23r[34l[34h[?25h[23m[24m[0m[H[J[?25l[23;1H"test/arrayTest.js" [New File][2;1H[1m[34m~                                                                                                             [3;1H~                                                                                                             [4;1H~                                                                                                             [5;1H~                                                                                                             [6;1H~                                                                                                             [7;1H~                                                                                                             [8;1H~                                                                                                             [9;1H~                                                                                                             [10;1H~                                                                                                             [11;1H~                                                                                                             [12;1H~                                                                                                             [13;1H~                                                                                                             [14;1H~                                                                                                             [15;1H~                                                                                                             [16;1H~                                                                                                             [17;1H~                                                                                                             [18;1H~                                                                                                             [19;1H~                                                                                                             [20;1H~                                                                                                             [21;1H~                                                                                                             [22;1H~                                                                                                             [0m[23;93H0,0-1[9CAll[1;1H[34h[?25h[?25l[23;1H[1m-- INSERT --[0m[23;13H[K[23;93H0,1[11CAll[1;1H[34h[?25h[?25ldescribe([31m'Array'[0m, [36mfunction[0m() [36m{[0m
+  [34m// Further code for tests goes here[0m[2;38H[K[3;1H  [34m// });[0m[3;9H[K[23;93H3,9[3;9H[34h[?25h[23;1H[K[3;8H[?25l[23;93H3,8[11CAll[3;8H[34h[?25h[?25l[1;30H[36m[46m{[0m[3;6H[34m[46m}[0m[23;95H6[3;6H[34h[?25h[?25l[23;1H[1m-- INSERT --[0m[23;93H[K[23;93H3,6[11CAll[3;6H[34h[?25h[?25l[34m}[0m[34m[46m)[0m[34m;[0m[3;8H[K[3;5H[34m[46m}[0m[34m)[0m[23;95H5[3;5H[34h[?25h[?25l/[36m}[0m[46m)[0m;[3;7H[K[3;4H[36m[46m}[0m)[23;95H4[3;4H[34h[?25h[?25l[36m}[0m[46m)[0m;[3;6H[K[3;3H[36m[46m}[0m)[23;95H3[3;3H[34h[?25h[?25l[36m}[0m[46m)[0m;[3;5H[K[3;2H[36m[46m}[0m)[23;95H2[3;2H[34h[?25h[?25l[36m}[0m[46m)[0m;[3;4H[K[3;1H[36m[46m}[0m)[23;95H1[3;1H[34h[?25h[23;1H[K[?25l[23;93H3,1[11CAll[3;1H[34h[?25h[?25l[1;30H[36m{
+
+}[0m[23;93H2[2;1H[34h[?25h[?25l[23;93H[K[23;1H:[34h[?25hw[?25l[34h[?25h[?25l"test/arrayTest.js" [New] 3L, 73C written[51C2,1[11CAll[23;93H[K[23;93H2,1[11CAll[2;1H[34h[?25h[23;1H[23;1H[K[23;1H[?1l>[?1049l[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ cat a[Ktest/arrayTest.js 
+describe('Array', function() {
+  // Further code for tests goes here
+});
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ This th[K[K[K[K[K[K[Kvim [K[K[K[Knpm test
+[?25l[[90m..................[0m] - : [32minfo[0m [35musing[0m node@v6.14.4[K[K[?25h
+> mocha_chai_example@1.0.0 test /home/ec2-user/environment/cati/javascript_testing/mocha_chai_example
+> mocha
+
+/home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/test/arrayTest.js:1
+(function (exports, require, module, __filename, __dirname) { var assert = chai.assert;
+                                                                               ^
+
+ReferenceError: chai is not defined
+    at Object.<anonymous> (/home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/test/arrayTest.js:1:80)
+    at Module._compile (module.js:577:32)
+    at Object.Module._extensions..js (module.js:586:10)
+    at Module.load (module.js:494:32)
+    at tryModuleLoad (module.js:453:12)
+    at Function.Module._load (module.js:445:3)
+    at Module.require (module.js:504:17)
+    at require (internal/module.js:20:19)
+    at /home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/node_modules/mocha/lib/mocha.js:250:27
+    at Array.forEach (native)
+    at Mocha.loadFiles (/home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/node_modules/mocha/lib/mocha.js:247:14)
+    at Mocha.run (/home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/node_modules/mocha/lib/mocha.js:576:10)
+    at Object.<anonymous> (/home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/node_modules/mocha/bin/_mocha:637:18)
+    at Module._compile (module.js:577:32)
+    at Object.Module._extensions..js (module.js:586:10)
+    at Module.load (module.js:494:32)
+    at tryModuleLoad (module.js:453:12)
+    at Function.Module._load (module.js:445:3)
+    at Module.runMain (module.js:611:10)
+    at run (bootstrap_node.js:394:7)
+    at startup (bootstrap_node.js:160:9)
+    at bootstrap_node.js:507:3
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Test failed.  See above for more details.
+[0m[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ npm test
+[?25l[[90m..................[0m] - : [32minfo[0m [35musing[0m node@v6.14.4[K[K[?25h
+> mocha_chai_example@1.0.0 test /home/ec2-user/environment/cati/javascript_testing/mocha_chai_example
+> mocha
+
+/home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/test/arrayTest.js:1
+(function (exports, require, module, __filename, __dirname) { var assert = chai.assert;
+                                                                               ^
+
+ReferenceError: chai is not defined
+    at Object.<anonymous> (/home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/test/arrayTest.js:1:80)
+    at Module._compile (module.js:577:32)
+    at Object.Module._extensions..js (module.js:586:10)
+    at Module.load (module.js:494:32)
+    at tryModuleLoad (module.js:453:12)
+    at Function.Module._load (module.js:445:3)
+    at Module.require (module.js:504:17)
+    at require (internal/module.js:20:19)
+    at /home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/node_modules/mocha/lib/mocha.js:250:27
+    at Array.forEach (native)
+    at Mocha.loadFiles (/home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/node_modules/mocha/lib/mocha.js:247:14)
+    at Mocha.run (/home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/node_modules/mocha/lib/mocha.js:576:10)
+    at Object.<anonymous> (/home/ec2-user/environment/cati/javascript_testing/mocha_chai_example/node_modules/mocha/bin/_mocha:637:18)
+    at Module._compile (module.js:577:32)
+    at Object.Module._extensions..js (module.js:586:10)
+    at Module.load (module.js:494:32)
+    at tryModuleLoad (module.js:453:12)
+    at Function.Module._load (module.js:445:3)
+    at Module.runMain (module.js:611:10)
+    at run (bootstrap_node.js:394:7)
+    at startup (bootstrap_node.js:160:9)
+    at bootstrap_node.js:507:3
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Test failed.  See above for more details.
+[0m[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ [K[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ npm test
+[?25l[[90m..................[0m] - : [32minfo[0m [35musing[0m node@v6.14.4[K[K[?25h
+> mocha_chai_example@1.0.0 test /home/ec2-user/environment/cati/javascript_testing/mocha_chai_example
+> mocha
+
+
+[0m[0m
+[0m  Array[0m
+  [32m  ✓[0m[90m should start empty[0m
+
+
+[92m [0m[32m 1 passing[0m[90m (13ms)[0m
+
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ mocah[K[Kha
+
+[0m[0m
+[0m  Array[0m
+[2K[0G  [32m  ✓[0m[90m should start empty[0m
+
+
+[92m [0m[32m 1 passing[0m[90m (12ms)[0m
+
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ [K[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ [K[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ node [K[K[K[K[Knpm test
+[?25l[[90m..................[0m] - : [32minfo[0m [35musing[0m node@v6.14.4[K[K[?25h
+> mocha_chai_example@1.0.0 test /home/ec2-user/environment/cati/javascript_testing/mocha_chai_example
+> mocha
+
+
+[0m[0m
+[0m  Array[0m
+  [32m  ✓[0m[90m should start empty[0m
+[0m    #indexOf[0m
+    [32m  ✓[0m[90m should return -1 when the value is not present[0m
+
+
+[92m [0m[32m 2 passing[0m[90m (13ms)[0m
+
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ node
+[1G[0J> [3Ga[1G[0J> [3Gtest_arr[1G[0J> test_ar[10G[1G[0J> test_a[9G[1G[0J> test_[8G[1G[0J> test[7G[1G[0J> tes[6GtArr = 1[1G[0J> testArr = [13G[1,2,3,4]
+[ [33m1[39m, [33m2[39m, [33m3[39m, [33m4[39m ]
+[1G[0J> [3GtestArr[-1]
+[90mundefined[39m
+[1G[0J> [3Gooo[1G[0J> oo[5G[1G[0J> o[4G[1G[0J> [3G[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ ur[K[Kruby[K[K[K[Kpython
+Python 2.7.14 (default, May  2 2018, 18:31:34) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-11)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> testList = [1,2,34[K,4]
+>>> testList[-1]
+4
+>>> [1,2,3][-1]
+3
+>>> 
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ # array[K[K[K[K[K[1.2[K[K,3[K2,3][1]
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ # [1,2,3][1][1@i[1P[1@e[1@c[1@h[1@o[1@ 
+
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ node[K[K[K[Kmocha
+
+[0m[0m
+[0m  Array[0m
+[2K[0G  [32m  ✓[0m[90m should start empty[0m
+[0m    #indexOf[0m
+[0m      when the element is not there[0m
+[2K[0G      [32m  ✓[0m[90m should return -1 when the value is not present[0m
+[0m      when the element is there[0m
+[2K[0G      [31m  1) should return the value of the index where element exists[0m
+[0m    #[] getter function[0m
+[2K[0G    [32m  ✓[0m[90m should return a value at index[0m
+
+
+[92m [0m[32m 3 passing[0m[90m (18ms)[0m
+[31m  1 failing[0m
+
+[0m  1) Array #indexOf when the element is there should return the value of the index where element exists:
+
+      [31mAssertionError: expected 0 to equal 2[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-0[0m
+      [32m+2[0m
+      [0m[90m
+      at Context.<anonymous> (test/arrayTest.js:20:20)
+[0m
+
+
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ mocha
+
+[0m[0m
+[0m  Array[0m
+[2K[0G  [32m  ✓[0m[90m should start empty[0m
+[0m    #indexOf[0m
+[0m      when the element is not there[0m
+[2K[0G      [32m  ✓[0m[90m should return -1 when the value is not present[0m
+[0m      when the element is there[0m
+[2K[0G      [31m  1) should return the value of the index where element exists[0m
+[0m    #[] getter function[0m
+[2K[0G    [32m  ✓[0m[90m should return a value at index[0m
+
+
+[92m [0m[32m 3 passing[0m[90m (20ms)[0m
+[31m  1 failing[0m
+
+[0m  1) Array #indexOf when the element is there should return the value of the index where element exists:
+
+      [31mAssertionError: expected 0 to equal 2[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-0[0m
+      [32m+2[0m
+      [0m[90m
+      at Context.<anonymous> (test/arrayTest.js:20:20)
+[0m
+
+
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ k[Kmocha
+
+[0m[0m
+[0m  Array[0m
+[2K[0G  [32m  ✓[0m[90m should start empty[0m
+[0m    #indexOf[0m
+[0m      when the element is not there[0m
+[2K[0G      [32m  ✓[0m[90m should return -1 when the value is not present[0m
+[0m      when the element is there[0m
+[2K[0G      [32m  ✓[0m[90m should return the value of the index where element exists[0m
+[0m    #[] getter function[0m
+[2K[0G    [32m  ✓[0m[90m should return a value at index[0m
+
+
+[92m [0m[32m 4 passing[0m[90m (14ms)[0m
+
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m../../blog_app/[m
+	[31m../[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ git add .
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing/mocha_chai_example[00m (master) $ git[K[Kcd ..
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing[00m (master) $ ls
+mocha_chai_example
+[01;32muser1[00m:[01;34m~/environment/cati/javascript_testing[00m (master) $ cd ..
+[01;32muser1[00m:[01;34m~/environment/cati[00m (master) $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/_mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/he[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/mkdirp[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/History.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/index.d.ts[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/.npmignore[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/LICENSE.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/CODEOWNERS[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/CODE_OF_CONDUCT.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/CONTRIBUTING.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/History.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/ReleaseNotes.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/bower.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/chai.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/karma.conf.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/karma.sauce.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/assertion.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/config.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/core/assertions.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/interface/assert.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/interface/expect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/interface/should.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addChainableMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addLengthGuard.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addProperty.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/compareByInspect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/expectTypes.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/flag.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getActual.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getEnumerableProperties.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getMessage.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getProperties.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/inspect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/isNaN.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/isProxyEnabled.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/objDisplay.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/overwriteChainableMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/overwriteMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/overwriteProperty.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/proxify.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/test.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/transferFlags.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/register-assert.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/register-expect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/register-should.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/sauce.browsers.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/check-error.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/Readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/typings/index.d.ts[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/README.markdown[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/example/map.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/test/map.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.coveralls.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.eslintrc[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.npmignore[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/Makefile[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/karma.conf.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/node.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/browser.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/debug.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/node.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/deep-eql.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/CONTRIBUTING.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/dist/diff.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/dist/diff.min.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/convert/dmp.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/convert/xml.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/array.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/base.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/character.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/css.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/json.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/line.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/sentence.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/word.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/apply.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/create.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/merge.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/parse.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/util/array.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/util/distance-iterator.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/util/params.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/release-notes.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/runtime.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/yarn.lock[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/old.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/get-func-name.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/changelog.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/common.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/glob.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.eslintrc.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.tags[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.tags1[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/History.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/Readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/lib/growl.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/test.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/LICENSE-MIT.txt[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/bin/he[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/he.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/man/he.1[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/inflight.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/inherits.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/inherits_browser.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/minimatch.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/example/parse.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/readme.markdown[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/dash.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/default_bool.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/dotted.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/long.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/parse.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/parse_modified.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/short.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/whitespace.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/bin/cmd.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/bin/usage.txt[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/examples/pow.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/readme.markdown[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/chmod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/clobber.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/mkdirp.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/opts_fs.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/opts_fs_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/perm.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/perm_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/race.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/rel.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/return.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/return_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/root.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/umask.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/umask_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/bin/_mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/bin/mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/bin/options.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/browser-entry.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/browser/growl.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/browser/progress.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/browser/tty.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/context.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/hook.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/bdd.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/common.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/exports.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/qunit.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/tdd.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/mocha.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/ms.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/pending.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/base.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/base.js.orig[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/doc.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/dot.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/html.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/json-stream.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/json.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/json.js.orig[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/landing.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/list.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/markdown.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/min.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/nyan.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/progress.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/spec.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/tap.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/xunit.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/runnable.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/runner.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/suite.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/template.html[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/test.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/utils.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/mocha.css[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/mocha.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/license.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/once.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/pathval.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/browser.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/type-detect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/wrappy.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/output.txt[m
+	[32mnew file:   javascript_testing/mocha_chai_example/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/test/arrayTest.js[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   javascript_testing/mocha_chai_example/output.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mblog_app/[m
+
+[01;32muser1[00m:[01;34m~/environment/cati[00m (master) $ git add .[K[K[Kvim g[K.git/i[K[Kignore
+[?1049h[?1h=[1;21r[34l[34h[?25h[23m[24m[0m[H[J[?25l[21;1H".gitignore" [New File][2;1H[1m[34m~                                                                                                    [3;1H~                                                                                                    [4;1H~                                                                                                    [5;1H~                                                                                                    [6;1H~                                                                                                    [7;1H~                                                                                                    [8;1H~                                                                                                    [9;1H~                                                                                                    [10;1H~                                                                                                    [11;1H~                                                                                                    [12;1H~                                                                                                    [13;1H~                                                                                                    [14;1H~                                                                                                    [15;1H~                                                                                                    [16;1H~                                                                                                    [17;1H~                                                                                                    [18;1H~                                                                                                    [19;1H~                                                                                                    [20;1H~                                                                                                    [0m[21;84H0,0-1[9CAll[1;1H[34h[?25h[?25l[21;1H[1m-- INSERT --[0m[21;14H[K[21;84H0,1[11CAll[1;1H[34h[?25h[?25ln[21;84H1,2[1;2H[34h[?25h[?25lo[21;86H3[1;3H[34h[?25h[?25ld[21;86H4[1;4H[34h[?25h[?25le[21;86H5[1;5H[34h[?25h[?25l_[21;86H6[1;6H[34h[?25h[?25lm[21;86H7[1;7H[34h[?25h[?25lo[21;86H8[1;8H[34h[?25h[?25ld[21;86H9[1;9H[34h[?25h[?25lu[21;86H10[1;10H[34h[?25h[?25ll[21;87H1[1;11H[34h[?25h[?25le[21;87H2[1;12H[34h[?25h[?25ls[21;87H3[1;13H[34h[?25h[21;1H[K[?25l[21;84H1,12[10CAll[1;12H[34h[?25h[?25l[21;1H".gitignore"[21;84H[K[21;14H[New] 1L, 13C written
+[?1l>[34h[?25h[?1049l[01;32muser1[00m:[01;34m~/environment/cati[00m (master) $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/_mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/he[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/mkdirp[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/History.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/index.d.ts[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/.npmignore[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/LICENSE.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/CODEOWNERS[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/CODE_OF_CONDUCT.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/CONTRIBUTING.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/History.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/ReleaseNotes.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/bower.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/chai.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/karma.conf.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/karma.sauce.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/assertion.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/config.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/core/assertions.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/interface/assert.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/interface/expect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/interface/should.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addChainableMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addLengthGuard.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addProperty.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/compareByInspect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/expectTypes.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/flag.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getActual.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getEnumerableProperties.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getMessage.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getProperties.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/inspect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/isNaN.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/isProxyEnabled.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/objDisplay.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/overwriteChainableMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/overwriteMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/overwriteProperty.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/proxify.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/test.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/transferFlags.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/register-assert.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/register-expect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/register-should.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/sauce.browsers.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/check-error.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/Readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/typings/index.d.ts[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/README.markdown[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/example/map.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/test/map.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.coveralls.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.eslintrc[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.npmignore[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/Makefile[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/karma.conf.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/node.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/browser.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/debug.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/node.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/deep-eql.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/CONTRIBUTING.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/dist/diff.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/dist/diff.min.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/convert/dmp.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/convert/xml.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/array.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/base.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/character.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/css.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/json.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/line.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/sentence.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/word.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/apply.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/create.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/merge.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/parse.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/util/array.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/util/distance-iterator.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/util/params.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/release-notes.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/runtime.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/yarn.lock[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/old.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/get-func-name.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/changelog.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/common.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/glob.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.eslintrc.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.tags[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.tags1[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/History.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/Readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/lib/growl.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/test.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/LICENSE-MIT.txt[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/bin/he[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/he.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/man/he.1[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/inflight.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/inherits.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/inherits_browser.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/minimatch.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/example/parse.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/readme.markdown[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/dash.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/default_bool.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/dotted.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/long.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/parse.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/parse_modified.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/short.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/whitespace.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/bin/cmd.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/bin/usage.txt[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/examples/pow.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/readme.markdown[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/chmod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/clobber.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/mkdirp.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/opts_fs.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/opts_fs_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/perm.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/perm_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/race.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/rel.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/return.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/return_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/root.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/umask.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/umask_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/bin/_mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/bin/mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/bin/options.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/browser-entry.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/browser/growl.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/browser/progress.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/browser/tty.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/context.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/hook.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/bdd.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/common.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/exports.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/qunit.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/tdd.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/mocha.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/ms.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/pending.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/base.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/base.js.orig[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/doc.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/dot.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/html.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/json-stream.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/json.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/json.js.orig[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/landing.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/list.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/markdown.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/min.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/nyan.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/progress.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/spec.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/tap.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/xunit.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/runnable.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/runner.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/suite.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/template.html[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/test.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/utils.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/mocha.css[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/mocha.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/license.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/once.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/pathval.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/browser.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/type-detect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/wrappy.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/output.txt[m
+	[32mnew file:   javascript_testing/mocha_chai_example/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/test/arrayTest.js[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   javascript_testing/mocha_chai_example/output.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gitignore[m
+	[31mblog_app/[m
+
+[01;32muser1[00m:[01;34m~/environment/cati[00m (master) $ git rm -[K[K[K[K[K[K[K[Kgit rm --cached
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+[01;32muser1[00m:[01;34m~/environment/cati[00m (master) $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/_mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/he[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/mkdirp[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/.bin/mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/History.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/index.d.ts[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/assertion-error/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/.npmignore[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/LICENSE.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/balanced-match/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/brace-expansion/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/browser-stdout/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/CODEOWNERS[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/CODE_OF_CONDUCT.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/CONTRIBUTING.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/History.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/ReleaseNotes.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/bower.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/chai.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/karma.conf.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/karma.sauce.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/assertion.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/config.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/core/assertions.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/interface/assert.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/interface/expect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/interface/should.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addChainableMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addLengthGuard.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/addProperty.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/compareByInspect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/expectTypes.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/flag.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getActual.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getEnumerableProperties.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getMessage.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/getProperties.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/inspect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/isNaN.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/isProxyEnabled.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/objDisplay.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/overwriteChainableMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/overwriteMethod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/overwriteProperty.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/proxify.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/test.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/lib/chai/utils/transferFlags.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/register-assert.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/register-expect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/register-should.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/chai/sauce.browsers.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/check-error.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/check-error/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/Readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/commander/typings/index.d.ts[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/README.markdown[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/example/map.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/concat-map/test/map.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.coveralls.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.eslintrc[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.npmignore[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/Makefile[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/karma.conf.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/node.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/browser.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/debug.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/debug/src/node.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/deep-eql.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/deep-eql/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/CONTRIBUTING.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/dist/diff.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/dist/diff.min.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/convert/dmp.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/convert/xml.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/array.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/base.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/character.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/css.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/json.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/line.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/sentence.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/diff/word.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/apply.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/create.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/merge.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/patch/parse.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/util/array.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/util/distance-iterator.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/lib/util/params.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/release-notes.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/runtime.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/diff/yarn.lock[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/escape-string-regexp/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/old.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/fs.realpath/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/get-func-name.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/get-func-name/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/changelog.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/common.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/glob.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/glob/sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.eslintrc.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.tags[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.tags1[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/History.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/Readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/lib/growl.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/growl/test.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/has-flag/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/LICENSE-MIT.txt[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/bin/he[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/he.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/man/he.1[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/he/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/inflight.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inflight/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/inherits.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/inherits_browser.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/inherits/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/minimatch.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimatch/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/example/parse.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/readme.markdown[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/dash.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/default_bool.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/dotted.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/long.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/parse.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/parse_modified.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/short.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/minimist/test/whitespace.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/.travis.yml[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/bin/cmd.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/bin/usage.txt[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/examples/pow.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/readme.markdown[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/chmod.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/clobber.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/mkdirp.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/opts_fs.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/opts_fs_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/perm.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/perm_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/race.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/rel.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/return.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/return_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/root.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/umask.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mkdirp/test/umask_sync.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/bin/_mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/bin/mocha[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/bin/options.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/browser-entry.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/browser/growl.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/browser/progress.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/browser/tty.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/context.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/hook.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/bdd.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/common.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/exports.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/qunit.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/interfaces/tdd.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/mocha.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/ms.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/pending.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/base.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/base.js.orig[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/doc.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/dot.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/html.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/json-stream.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/json.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/json.js.orig[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/landing.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/list.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/markdown.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/min.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/nyan.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/progress.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/spec.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/tap.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/reporters/xunit.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/runnable.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/runner.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/suite.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/template.html[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/test.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/lib/utils.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/mocha.css[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/mocha.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/mocha/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/license.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/ms/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/once.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/once/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/path-is-absolute/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/CHANGELOG.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/pathval/pathval.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/browser.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/license[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/supports-color/readme.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/index.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/type-detect/type-detect.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/LICENSE[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/README.md[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/node_modules/wrappy/wrappy.js[m
+	[32mnew file:   javascript_testing/mocha_chai_example/output.txt[m
+	[32mnew file:   javascript_testing/mocha_chai_example/package.json[m
+	[32mnew file:   javascript_testing/mocha_chai_example/test/arrayTest.js[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   javascript_testing/mocha_chai_example/output.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gitignore[m
+	[31mblog_app/[m
+
+[01;32muser1[00m:[01;34m~/environment/cati[00m (master) $ git [Kgit add .
