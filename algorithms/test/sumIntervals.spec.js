@@ -2,7 +2,7 @@ var assert = require('assert');
 var chai = require('chai');
 var sumIntervals = require('../sumIntervals');
 
-describe('sumIntervals', function(){
+describe.only('sumIntervals', function(){
     context('when input is null', function(){
       it('return zero', function(){
           assert.equal(sumIntervals(null), 0);
@@ -44,7 +44,43 @@ describe('sumIntervals', function(){
       })  
     })
     
+    context('When input has overlapping intervals', function() {
+        it('returns sum without counting the overlap', function(){
+          assert.equal(sumIntervals([[1, 4], [3, 5] ]), 4); // 3 + 2
+          assert.equal(sumIntervals([[1, 4], [7,10], [3, 5]]), 7); // 3 + 2
+          // collect all the real intervals
+          // say that the interval is a new one
+          
+          // or we collect the interval into somethign we know overlaps
+            // if the newer interval is higher we moddify the real interval to go to a higher bound
+            // if the newer interval is lower we also modify to lower to the lower bound
+            
+          // a collection of real intervals might be a hash
+          
 
-    
+        // 1,4 [1,4] >> 3
+        // 1,4 [1,4] [3,4] 
+        // 1,5 [1,4] [3,4][3,5]
+        // 7,10 [7,10]
+        // [1, 4] [7, 10] [3, 5]
+        // >>> [1,2,3,4,7,8,9,10,5]
+        // [1,2,3,4,7,10,3,4,5]
+        // [1,2,3,3,4,4,5,7,8,9,10]
+        // >>> [1,2,3,4,5,7,8,9,10]
+        // [1,2,3,4,5][7,8,9,10]
+        // 5-1=4 10-7=3
+        // 7
+        
+        // [1,4]
+        // 1: true
+        // 2: true
+        // 3: true
+        // 4: true
+        
+        })
+        
+        
+               
+    })    
     
 })

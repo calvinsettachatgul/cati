@@ -29,6 +29,7 @@
 //   [3, 5]
 // ] ); // => 7
 
+
 // sumIntervals( [
 //   [1,5],
 //   [10, 20],
@@ -37,21 +38,64 @@
 //   [5, 11]
 // ] ); // => 19
 
+// overlapping last number of the previous interval is greater than the first number of the next interval
 let sumIntervals = (intervArr) => {
-    
     let sum = 0;
-
-    if(intervArr === null){
+    
+    if(intervArr === null || intervArr.length === 0){
         return sum;
     }
     
-    for(let i = 0; i < intervArr.length; i++){
-        sum += (intervArr[i][1] - intervArr[i][0])
+    let intervalSet = new Set();
     
+    intervArr.forEach((interval) => {
+        // console.log(interval[0]);
+        // console.log(interval[1]);
+        for(let i = interval[0]; i <= interval[1]; i++){
+            intervalSet.add(i);
+        }
+    });
+    
+
+    
+    // let prev_last = intervArr[0][1]
+    
+    // for(let i = 0; i < intervArr.length; i++){
+        
+    //     // the last number of the previous interval is within the range of the next interval
+    //     if(prev_last > intervArr[i][0] && prev_last < intervArr[i][1]){
+    //         intervArr[i][0] = prev_last;
+    //     }
+        
+    //     sum += (intervArr[i][1] - intervArr[i][0])
+    //     prev_last = intervArr[i][1];
+    // }
+    
+// [1, 4], [3, 5]
+/*
+    prev_last intervArr[i][0] intervArr[i][1]
+0      4            1               4             => 3
+1      4             3              5 .  intervArr[1][0] = 4 => 1
+*/
+    // return [...intervalSet].sort(); 
+    let myArr = Array.from(intervalSet);
+    myArr = myArr.sort((a, b) => a - b );
+    let tempArr = [];
+    for(let i = 0; i < myArr.length; i++){
+              //3
+        tempArr.push(myArr[i]);
+        if(myArr[i+1] !== myArr[i] + 1){
+            // push a collection of numbers to intervalCollection
+            sum += tempArr[tempArr.length - 1] - tempArr[0];
+            // console.log(tempArr, 'in the for loop');
+            tempArr = [];
+        }
+        
     }
-
-    return sum; 
-
+    return sum;
+    
 }
 
+//[[1,2,3],[700,701]]
+console.log(sumIntervals([[1, 4], [7, 10], [3, 5]]));
 module.exports = sumIntervals;
