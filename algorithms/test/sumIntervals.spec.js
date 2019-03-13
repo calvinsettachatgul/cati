@@ -1,6 +1,6 @@
 var assert = require('assert');
 var chai = require('chai');
-var sumIntervals = require('../sumIntervals');
+var { sumIntervals, overlap, mergeIntervals } = require('../sumIntervals');
 
 describe.only('sumIntervals', function(){
     context('when input is null', function(){
@@ -82,5 +82,17 @@ describe.only('sumIntervals', function(){
         
                
     })    
+  describe.only('overlap', function(){
+    it('should return true because 2 intervals overlap', function(){
+      assert.equal(overlap([1,4], [3, 5]), true)
+    })
+  })
+  
+  describe.only('mergeIntervals', function(){
+    it('should return a merged interval when the intervals overlap', function(){
+      assert.equal(overlap([1,4], [3, 5]), true)
+    })
+  })
+    
     
 })

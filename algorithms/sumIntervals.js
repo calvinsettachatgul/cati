@@ -96,6 +96,43 @@ let sumIntervals = (intervArr) => {
     
 }
 
+<<<<<<< Updated upstream
 //[[1,2,3],[700,701]]
 console.log(sumIntervals([[1, 4], [7, 10], [3, 5]]));
 module.exports = sumIntervals;
+=======
+// returns true if the 2 intervals overlap
+// returns false if the 2 intervals do not overlap
+const overlap = (arr2, arr1) => {
+    let arr1overlapLeft = arr1[1] >= arr2[0] && arr1[1] <= arr2[1]
+    let arr1overlapRight = arr1[0] <= arr2[1] && arr1[0] >= arr2[0]
+    let arr2overlapLeft = arr2[1] >= arr1[0] && arr2[1] <= arr1[1]
+    let arr2overlapRight = arr2[0] <= arr1[1] && arr2[1] >= arr1[0]
+    
+    if( arr1overlapLeft || arr1overlapRight || arr2overlapLeft || arr2overlapRight){
+        return true;
+    }
+        
+    return false;
+    
+    //otherway
+    
+    // for(let i < arr1[1]; i = 0; i++){
+    //     if(arr2[1] == i || arr2[0]){
+    //         return true;
+    //     }
+    // }
+    
+}
+
+// merges 2 intervals that overlap
+const mergeIntervals = (arr2, arr1) => {
+    
+}
+
+module.exports = {
+    sumIntervals,
+    overlap,
+    mergeIntervals
+};
+>>>>>>> Stashed changes
