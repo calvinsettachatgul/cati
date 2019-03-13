@@ -96,11 +96,9 @@ let sumIntervals = (intervArr) => {
     
 }
 
-<<<<<<< Updated upstream
 //[[1,2,3],[700,701]]
 console.log(sumIntervals([[1, 4], [7, 10], [3, 5]]));
 module.exports = sumIntervals;
-=======
 // returns true if the 2 intervals overlap
 // returns false if the 2 intervals do not overlap
 const overlap = (arr2, arr1) => {
@@ -135,4 +133,3 @@ module.exports = {
     overlap,
     mergeIntervals
 };
->>>>>>> Stashed changes
